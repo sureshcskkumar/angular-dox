@@ -1,0 +1,89 @@
+Angular Keywords:
+
+Component
+Module and Nested Module
+Service
+Directives
+Pipes
+SPA (Single Page Applications) and Routing
+Forms
+
+
+main.ts: bootstrap -> browser
+
+
+
+
+Types of data binding:
+In template
+
+
+	1. String interpolation:
+			{{variable}}
+	2. Event binding:
+			(event)=method()
+	3. Property binding
+			<input [value]="variable" />
+	4. Two-way binding
+			<input [(ngModel)]="variable" />
+			
+			Note: To use ngModel in template like html, we have to import FormsModule in the associated component ts file
+
+
+
+
+Two types of writing forms:
+	1. Reactive forms (preferred)
+	2. Template Driven Form
+
+
+
+
+Generate components:
+ng generate component welcome
+(or)
+ng g c login
+
+Same format can be used with pipes, directives, etc
+
+Similarly, generating guards:
+ng generate guard admin
+ng generate guard user
+
+Create model:
+ng g m user
+ng generate model user
+
+
+
+Different ways to use storage and sharing data:
+	1. Service (storing in a service class, which is available for the classes that need the data)
+	2. WebStorage Api (local storage and session storage)
+	3. Router path variable
+
+
+
+----------------------------------------------------------------------
+Example to use object in localStorage (shown using browser console):
+> let obj = {name: "mark", age: 35}
+< undefined
+
+> localStorage.setItem("o", obj)
+< undefined
+
+
+> localStorage.getItem("o")
+< '[object Object]'
+
+> typeof localStorage.getItem("o")
+< 'string'
+
+> localStorage.setItem("o", JSON.stringify(obj))
+< undefined
+
+> localStorage.getItem("o")
+< '{"name": "mark","age":35}'              // String
+
+> JSON.parse()
+< >{name: 'mark', age: 35}                 // Actual object
+----------------------------------------------------------------------

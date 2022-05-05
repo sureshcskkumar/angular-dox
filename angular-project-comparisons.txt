@@ -1,0 +1,29 @@
+app from app-backup
+
+01.databinding from app
+
+02-comp from app
+
+03-parent-child from 02-comp
+
+04-directives from 03-parent-child
+
+05-directives from 04-directives
+
+06-ajax_service from 05-directives
+
+07-pipes from 06-ajax_service
+
+06.7-ajax_service_with_pipes from 06-ajax_service
+
+08-froms from 05-directives
+
+09-routing from app-backup
+
+10-data-sharing-1 from 09-routing
+10-data-sharing-2 from 10-data-sharing-1
+10-data-sharing-3 from 10-data-sharing-2
+
+11-guard from 10-data-sharing-3
+
+12-nest-module from 10-data-sharing-3

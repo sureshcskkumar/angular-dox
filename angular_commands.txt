@@ -1,0 +1,18 @@
+cd into the angular project folder containing the package.json file and run the following:
+
+npm i
+
+
+
+Starting an angular project:
+ng serve
+Or
+npm run start
+
+
+
+
+One of the following is necessary to run angular projects:
+npm i -g lite-server http-server
+
+
