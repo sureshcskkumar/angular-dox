@@ -16,4 +16,26 @@ npm run start
 One of the following is necessary to run angular projects:
 npm i -g lite-server http-server
 
+----------------------------------------------------------------------
+Installing commands:
 
+Generate components:
+ng generate component welcome
+(or)
+ng g c login
+
+Same format can be used with pipes, directives, etc
+
+Similarly, generating guards:
+ng generate guard admin
+ng generate guard user
+
+Create model:
+ng g m user
+ng generate model user
+
+
+
+# Install jwt-decode:
+npm install jwt-decode
+----------------------------------------------------------------------
