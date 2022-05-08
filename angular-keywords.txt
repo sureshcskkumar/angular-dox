@@ -84,6 +84,6 @@ Example to use object in localStorage (shown using browser console):
 > localStorage.getItem("o")
 < '{"name": "mark","age":35}'              // String
 
-> JSON.parse()
+> JSON.parse(localStorage.getItem("o"))
 < >{name: 'mark', age: 35}                 // Actual object
 ----------------------------------------------------------------------

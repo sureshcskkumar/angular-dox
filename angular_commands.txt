@@ -1,3 +1,4 @@
+When trying to use an existing project pulled from a git repository, then:
 cd into the angular project folder containing the package.json file and run the following:
 
 npm i
